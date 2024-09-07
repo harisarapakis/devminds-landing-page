@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+  }
+  
+  .app {
+    text-align: center;
+  }
+  
+  .header {
+    background: linear-gradient(135deg, #6A0572, #5E00AA);
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+    clip-path: ellipse(120% 100% at 50% 0%);
+  }
+  
+  .logo-image {
+    width: 150px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .logo-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .tagline {
+    font-size: 1.7rem;
+    color: #e0e4ff;
+    margin-top: 20px;
+  }
+  
+  .services {
+    padding: 70px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .service-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .service {
+    background: linear-gradient(145deg, #f0f0f0, #fafafa);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: scale(1.05);
+  }
+  
+  .service img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    color: #3b3b3b;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 1rem;
+    color: #6b6b6b;
+  }
+  
+  .cta {
+    padding: 60px;
+    background: linear-gradient(135deg, #5E00AA, #3A9AE2);
+  }
+  
+  .cta-button {
+    background-color: #fff;
+    color: #5E00AA;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #6A0572;
+  }
+  
+  .footer {
+    background-color: #1E1E2F;
+    color: #9ca3af;
+    padding: 30px 0;
+    font-size: 1rem;
+  }
+  

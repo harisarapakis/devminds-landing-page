@@ -1,99 +1,73 @@
-* {
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #e5e7eb;
+  background-color: #f4f7fa;
 }
 
 .app {
   text-align: center;
 }
 
-.header {
-  background-color: #1f2937;
-  color: #fff;
-  padding: 60px 0;
-}
-
-.logo-image {
-  width: 150px;
-  margin-bottom: 20px;
-}
-
-.tagline {
-  font-size: 1.7rem;
-  margin-top: 20px;
-  color: #9ca3af;
-}
-
-.services {
-  padding: 70px 20px;
-  background-color: #fff;
-}
-
-.service-container {
+/* Modern Navbar Styles */
+.navbar {
   display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.service {
-  background-color: #f3f4f6;
-  padding: 25px;
-  border-radius: 12px;
-  width: 30%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.service img {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-.service h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #1f2937;
-}
-
-.service p {
-  font-size: 1rem;
-  color: #6b7280;
-}
-
-.cta {
-  padding: 50px;
-  background-color: #1f2937;
-}
-
-.cta-button {
-  background-color: #3b82f6;
+.logo h1 {
   color: #fff;
-  border: none;
-  padding: 15px 40px;
-  font-size: 1.3rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1.8rem;
+  margin: 0;
 }
 
-.cta-button:hover {
-  background-color: #2563eb;
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
 }
 
-.footer {
-  background-color: #1f2937;
-  color: #9ca3af;
-  padding: 20px 0;
-}
-.logo-text {
-  font-size: 2rem;
+.nav-item {
   color: #fff;
-  margin-top: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #4A90E2;
+  color: #fff;
+}
+
+.active {
+  background-color: #5E00AA;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
 }
